@@ -1,0 +1,31 @@
+{
+  "name": "mix-project",
+  "version": "1.0.0",
+  "description": "Need to integrate a model quickly? Clone, install and code! 🤓",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoinelrk/mix-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoinelrk/mix-project/issues"
+  },
+  "homepage": "https://github.com/antoinelrk/mix-project#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.31"
+  },
+  "devDependencies": {
+    "sass": "^1.41.0",
+    "sass-loader": "^12.1.0"
+  }
+}
