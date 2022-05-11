@@ -147,7 +147,7 @@ body #app footer span {
 }
 body #app footer i {
   font-style: normal;
-  color: #e23535FF;
+  color: #e23535;
   animation: flash 1.5s linear infinite reverse;
 }
 @-webkit-keyframes flash {
