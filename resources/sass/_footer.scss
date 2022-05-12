@@ -1,0 +1,30 @@
+#app footer {
+  margin: auto 0 16px 0;
+  color: var(--foreground);
+  user-select: none;
+}
+
+#app footer i {
+  font-style: normal;
+  margin: 0 4px;
+  color: var(--red-heart);
+  animation: flash 1.5s linear infinite reverse
+}
+
+#app footer span a {
+  color: var(--tonic);
+}
+
+#app footer span a:hover {
+  text-decoration: underline;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

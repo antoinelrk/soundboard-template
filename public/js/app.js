@@ -7,7 +7,19 @@
   \*****************************/
 /***/ (() => {
 
+var numberOfSongs = 30;
+var grid = document.querySelector('.centered-wrapper');
+var template = '';
 
+for (var i = 1; i < numberOfSongs; i++) {
+  if (i === 5) {
+    template += "<button disabled class=\"run-sound\">Son n\xB0".concat(i, " is disabled</button>");
+  } else {
+    template += "<button class=\"run-sound\">Son n\xB0".concat(i, "</button>");
+  }
+}
+
+grid.innerHTML = template;
 
 /***/ }),
 
@@ -110,8 +122,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/public/js/app": 0,
-/******/ 			"public/css/app": 0
+/******/ 			"/js/app": 0,
+/******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -161,8 +173,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["public/css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
